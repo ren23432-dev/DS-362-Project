@@ -1,0 +1,222 @@
+/* ===== Reset ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI",Tahoma,sans-serif;
+    background:#eef5ff;
+    color:#333;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    line-height:1.6;
+}
+
+main{
+    flex:1;
+}
+
+/* ===== Header ===== */
+
+header{
+    background:linear-gradient(90deg,#2563eb,#1e40af);
+    color:#fff;
+    padding:18px;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px;
+    padding:8px 14px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:white;
+    color:#2563eb;
+}
+
+/* ===== Panels ===== */
+
+.panel{
+    background:white;
+    margin:25px 0;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.panel:hover{
+    transform:translateY(-4px);
+}
+
+.panel h1,
+.panel h2,
+.panel h3{
+    color:#1e40af;
+    margin-bottom:15px;
+}
+
+.panel p{
+    margin-bottom:15px;
+}
+
+/* ===== Forms ===== */
+
+.form-group{
+    margin-bottom:18px;
+}
+
+label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #cbd5e1;
+    border-radius:10px;
+    font-size:15px;
+    transition:.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 6px rgba(37,99,235,.3);
+    outline:none;
+}
+
+/* ===== Buttons ===== */
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:15px;
+}
+
+button:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
+
+/* ===== Tables ===== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+thead{
+    background:#2563eb;
+    color:white;
+}
+
+th,
+td{
+    padding:14px;
+    border-bottom:1px solid #eee;
+    text-align:left;
+}
+
+tr:hover{
+    background:#f8fbff;
+}
+
+/* ===== Images ===== */
+
+.event-image{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:18px;
+}
+
+/* ===== Messages ===== */
+
+.success-msg{
+    background:#dcfce7;
+    color:#166534;
+    border-left:6px solid #16a34a;
+    padding:14px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.error-msg{
+    background:#fee2e2;
+    color:#991b1b;
+    border-left:6px solid #dc2626;
+    padding:14px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+/* ===== Footer ===== */
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+/* ===== Responsive ===== */
+
+@media(max-width:768px){
+
+header .container{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:block;
+    margin:8px 0;
+    text-align:center;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+}
